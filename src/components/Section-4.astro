@@ -1,0 +1,76 @@
+<section class="flex flex-col">
+  <div class="max-w-7xl m-auto py-12 px-12">
+    <article class="flex text-white">
+      <div class="flex flex-col w-1/2 justify-center items-start p-5">
+        <div class="text-4xl text-left">
+          <h2>Las series de las que todos hablan</h2>
+        </div>
+        <div class="mt-4 pr-2 text-xl">
+          <p>
+            Encuentra tu nueva obsesión en nuestro creciente catálogo lleno de series adictivas, reality shows y clásicos icónicos de la televisión.
+          </p>
+        </div>
+      </div>
+      <div
+class="imgBox relative z-10 w-1/2 flex flex-col justify-center items-center p-5"
+      >
+        <div>
+          <img src="friends_leadimage.avif" />
+        </div>
+        <img src="friendslogo.avif" class="w-60" />
+      </div>
+    </article>
+    <article class="grid grid-cols-4 gap-4">
+      <div><img src="rickymorty.jpg" /></div>
+      <div><img src="bigbang.jpg" /></div>
+      <div><img src="got.jpg" /></div>
+      <div><img src="sexonuevayork.jpg" /></div>
+      <div><img src="soprano.jpg" /></div>
+      <div><img src="enruta.jpg" /></div>
+      <div><img src="superman.jpg" /></div>
+      <div><img src="natalie.jpg" /></div>
+    </article>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url(frinds_background.avif);
+    background-position: center;
+    background-size: cover;
+  }
+  .imgBox::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(var(--max-clr-violet-rgb), 0.1) 0%,
+        transparent 100%
+      ),
+      radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(var(--max-clr-dark-violet-rgb), 0.45) 0%,
+        transparent 100%
+      );
+    z-index: -1;
+  }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
+  :root {
+    --max-clr-violet-rgb: 255, 0, 205;
+    --max-clr-dark-violet-rgb: 100, 0, 163;
+  }
+</style>

@@ -1,0 +1,48 @@
+<section class="flex flex-col">
+    <div class="max-w-7xl m-auto py-12 px-12 flex flex-row z-10">
+      <article class="flex text-white justify-center items-center">
+        <div>
+            <h2 class="text-4xl">Grandes películas</h2>
+            <p class="text-xl mt-4">Descubre los grandes éxitos, desde lo último de DC y Warner Bros. hasta tus comedias, dramas y clásicos favoritos.</p>
+        </div>
+
+      </article>
+      <article class="grid grid-cols-2 gap-4">
+          <div><img src="eltest.jpg"></div>
+          <div><img src="hungergames.jpg"></div>
+          <div><img src="juegollaves.jpg"></div>
+          <div><img src="megalodon.jpg"></div>
+          <div><img src="flash.jpg"></div>
+          <div><img src="harrypotter.jpg"></div>
+      </article>
+     </div>
+  </section>
+  
+  <style>
+      section{
+          background-image: url(gradient2.jpg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+      
+      }
+      section::after{
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(170deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 110%);
+      }
+      h2{
+          font-family: 'Poppins', sans-serif;
+          letter-spacing: 0px;
+          font-weight: 500;
+      }
+      p{
+          font-family: 'Poppins', sans-serif;
+          letter-spacing: 0px;
+          font-weight: 400;
+      }
+  </style>

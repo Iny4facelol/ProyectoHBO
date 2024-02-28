@@ -1,0 +1,143 @@
+---
+
+---
+
+<header>
+  <section class="flex justify-center ">
+  <nav class="px-4 py-2 flex gap-32 justify-between">
+    <div class="flex gap-5">
+      <div class="flex justify-center items-center">
+        <img src="/hbo-max-h-w-l.svg" class="w-40 h-7" />
+      </div>
+      <div class="flex justify-center items-center">
+      <ul class="text-white text-xs flex justify-center items-center gap-8 p-2 cursor-pointer">
+        <li>IMPRESCINDIBLES</li>
+        <li>PELÍCULAS</li>
+        <li>SERIES</li>
+        <li>FAMILIA</li>
+        <li>PREGUNTAS FRECUENTES</li>
+        <li>PRECIOS</li>
+      </ul>
+      </div>
+    </div>
+    <div class="flex gap-6">
+      <button class="text-white text-xs">INICIA SESIÓN</button>
+      <button class="text-white text-xs bg-btnBackground rounded-full w-44 h-9 hover:bg-white hover:text-black transition-all duration-500">SUSCRÍBETE YA</button>
+    </div>
+  </nav>
+  <div class="grid mt-20 grid-cols-2 w-full px-2 self-center justify-center items-center text-white z-10 relative">
+    <div class="flex justify-center mt-8"><img src="/hbo-max-h-w-l.svg" class="w-48 h-8" /></div>
+    <div></div>
+    <div class="flex justify-center items-center text-center">
+      <div class="w-96 my-2">
+        <h1>En HBO Max encontrarás películas icónicas, series premiadas y mucho más.</h1>
+      </div>
+    </div>
+    <div></div>
+    <div>
+      <div class="text-center p-2">
+        <h3>9,99 €<small>/mes</small></h3>
+        <h4 class="mt-2">Cancela en cualquier momento.</h4>
+      </div>
+    </div>
+    <div></div>
+    <div class="flex justify-center items-center p-2">
+      <button class="text-white text-l bg-btnBackground rounded-full w-72 h-11">SUSCRÍBETE YA</button>
+    </div>
+    <div>
+      
+    </div>
+    <div></div>
+    <div class="flex justify-center items-center aquaBox relative pr-96">
+      <img src="aquaman.avif" class="w-52 aquaMini">
+    </div>
+  </div>
+ </section>  
+</header>
+
+<style>
+  	body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+    button {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 2px;
+    }
+    section {
+        height: 600px;
+        background-image: url(aquamanhero.avif);
+        background-size: auto 600px;
+        background-position: calc(50% + 120px) center;
+        background-repeat: no-repeat;
+        background-color: #000000;
+        z-index: 1;
+    }
+    section::before {
+        background-image: linear-gradient(90deg, #000000 30%, #00000000 40%);
+        content: "";
+        height: 600px;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+    section::after{
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .6) 8%, rgba(0, 0, 0, 0) 30%);
+      content: "";
+      height: 600px;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.801);
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+    }
+    h1{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-size: 21px;
+    }
+    h3{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0px;
+      font-size: 25px;
+
+    }
+    h4{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-size: 14px;
+    }
+    small{
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    margin: 0.3rem auto;
+    vertical-align: super;
+    font-weight: normal;
+    }
+    .aquaMini{
+    max-width: 200px;
+    }
+    .aquaBox::after{
+    content: "© & TM DC © 2024 WBEI";
+    font-size: .6rem;
+    color: #bbbbbbd3;
+    line-height: normal;
+    letter-spacing: 0;
+    display: block;
+    position: absolute;
+    padding: 0.3rem 0rem;
+    bottom: -25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }  
+
+
+    
+</style>
