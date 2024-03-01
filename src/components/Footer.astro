@@ -12,13 +12,13 @@ import Triangle from "./icons/Triangle.astro"
         </div>
     </article>
     <article class="flex flex-col gap-5">
-        <div class="flex gap-10 text-xs letterSpacing footerItem">
+        <div class="flex gap-10 text-xs letterSpacing footerItem footerItem1">
             <div class="cursor-pointer"><p>EXPLORA NUESTRO CONTENIDO</p></div>
             <div class="cursor-pointer"><p>PARA TODA LA FAMILIA</p></div>
             <div class="cursor-pointer"><p>PROGRAMA DE AFILIADOS</p></div>
             <div class="cursor-pointer"><p>HBO MAX TV INICIAR SESIÓN</p></div>
         </div>
-        <div class="flex gap-10 text-xs justify-center letterSpacing footerItem">
+        <div class="flex gap-10 text-xs justify-center letterSpacing footerItem footerItem1">
             <div class="cursor-pointer"><p>TRUE DETECTIVE: NOCHE POLAR</p></div>
             <div class="cursor-pointer"><p>BARBIE</p></div>
             <div class="cursor-pointer"><p>SUCCESSION</p></div>
@@ -27,7 +27,7 @@ import Triangle from "./icons/Triangle.astro"
         </div>
     </article>
     <article class="flex flex-col fontWeight gap-4 opacity-60 footerItem footerMini">
-        <div class="flex gap-5 text-xs">
+        <div class="flex gap-5 text-xs footerItem1">
             <div class="cursor-pointer"><p>Política de privacidad</p></div>
             <div class="cursor-pointer"><p>Gestionar preferencias</p></div>
             <div class="cursor-pointer"><p>Condiciones de uso</p></div>
@@ -77,5 +77,13 @@ import Triangle from "./icons/Triangle.astro"
         .footerMini {
             gap: 25px;
         }
+    }
+    @media (max-width:500px) {
+        .footerItem1{
+            flex-direction: column;
+            
+
+        }
+
     }
 </style>
