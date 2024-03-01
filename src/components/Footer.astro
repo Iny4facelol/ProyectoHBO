@@ -12,13 +12,13 @@ import Triangle from "./icons/Triangle.astro"
         </div>
     </article>
     <article class="flex flex-col gap-5">
-        <div class="flex gap-10 text-xs letterSpacing">
+        <div class="flex gap-10 text-xs letterSpacing footerItem">
             <div class="cursor-pointer"><p>EXPLORA NUESTRO CONTENIDO</p></div>
             <div class="cursor-pointer"><p>PARA TODA LA FAMILIA</p></div>
             <div class="cursor-pointer"><p>PROGRAMA DE AFILIADOS</p></div>
             <div class="cursor-pointer"><p>HBO MAX TV INICIAR SESIÓN</p></div>
         </div>
-        <div class="flex gap-10 text-xs justify-center letterSpacing">
+        <div class="flex gap-10 text-xs justify-center letterSpacing footerItem">
             <div class="cursor-pointer"><p>TRUE DETECTIVE: NOCHE POLAR</p></div>
             <div class="cursor-pointer"><p>BARBIE</p></div>
             <div class="cursor-pointer"><p>SUCCESSION</p></div>
@@ -26,7 +26,7 @@ import Triangle from "./icons/Triangle.astro"
             <div class="cursor-pointer"><p>JUEGO DE TRONOS</p></div>
         </div>
     </article>
-    <article class="flex flex-col fontWeight gap-4 opacity-60">
+    <article class="flex flex-col fontWeight gap-4 opacity-60 footerItem footerMini">
         <div class="flex gap-5 text-xs">
             <div class="cursor-pointer"><p>Política de privacidad</p></div>
             <div class="cursor-pointer"><p>Gestionar preferencias</p></div>
@@ -67,5 +67,15 @@ import Triangle from "./icons/Triangle.astro"
     }
     .fontWeight {
         font-weight: 400;
+    }
+    @media (max-width:768px) {
+        .footerItem{
+            padding: 0px 20px;
+            gap: 25px;
+            text-align: center;
+        }
+        .footerMini {
+            gap: 25px;
+        }
     }
 </style>

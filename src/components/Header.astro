@@ -3,13 +3,13 @@ import Navigation from "../components/Navigation.astro";
 ---
 <Navigation />
 <header>
-  <section class="flex flex-col justify-left" style="background-image: url(aquamanhero.avif)">
+  <section class="flex flex-col h-auto justify-left bg-[url('aquamanhero2.avif')] md:bg-[url('aquamanhero.avif')]">
   
-  <div class="grid mt-20 grid-cols-2 w-full px-2 self-center justify-center items-center text-white z-10 relative">
-    <div class="flex justify-center mt-8"><img src="/hbo-max-h-w-l.svg" class="w-48 h-8" /></div>
+  <div class="grid mt-20 grid-cols-2 w-full px-2 self-center justify-center items-center text-white z-10 relative  heroGrid">
+    <div class="flex justify-center mt-8 gridItem1"><img src="/hbo-max-h-w-l.svg" class="w-48 h-8" /></div>
     <div></div>
     <div class="flex justify-center items-center text-center">
-      <div class="w-96 my-2">
+      <div class="w-96 my-2 heroText">
         <h1>En HBO Max encontrarás películas icónicas, series premiadas y mucho más.</h1>
       </div>
     </div>
@@ -21,14 +21,14 @@ import Navigation from "../components/Navigation.astro";
       </div>
     </div>
     <div></div>
-    <div class="flex justify-center items-center p-2">
+    <div class="flex justify-center items-center p-2 gridItem3">
       <button class="text-white text-l bg-btnBackground rounded-full w-72 h-11  hover:bg-white hover:text-black transition-all duration-500">SUSCRÍBETE YA</button>
     </div>
     <div>
       
     </div>
     <div></div>
-    <div class="flex justify-center items-center aquaBox relative pr-96">
+    <div class="flex justify-center items-center aquaBox relative pr-96 aquamanLogo gridItem4">
       <img src="aquaman.avif" class="w-52 aquaMini">
     </div>
   </div>
@@ -109,6 +109,62 @@ import Navigation from "../components/Navigation.astro";
     padding: 0.3rem 0rem;
     bottom: -25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    @media (max-width:1500px) {
+      .aquamanLogo{
+        padding-right: 70px;
+      }
+    }
+    @media (max-width:900px){
+      section{
+        background-position: calc(70% + 120px) center;
+      }
+
+    }
+    @media (max-width:768px) {
+      section{
+        background-position: center top !important;
+        background-size: 100%;
+        height: 900px;
+        
+      }
+      section::before{
+        display: none;
+      }
+      section::after{
+        display: none;
+      }
+      .aquaBox::after{
+        padding-bottom: 15px;
+      }
+      .heroGrid {
+        height: auto;
+        margin: 0;
+        padding-top: 65vw;
+        gap: 5px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .aquamanLogo {
+        padding-right: 0px;
+      }
+      .aquaMini{
+        max-width: 500px;
+        width: 300px;
+      }
+      .gridItem1{
+        display: none;
+        
+      }
+      .gridItem4{
+        order: -1;
+        
+      }
+      .heroText{
+        width: 90%;
+      }
+
     }  
 
 
