@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation.astro";
 ---
 <Navigation />
 <header>
-  <section class="flex flex-col h-auto justify-left" style="background-image: url(aquamanhero.avif)">
+  <section class="flex flex-col h-auto justify-left">
   
   <div class="grid mt-20 grid-cols-2 w-full px-2 self-center justify-center items-center text-white z-10 relative  heroGrid">
     <div class="flex justify-center mt-8 gridItem1"><img src="/hbo-max-h-w-l.svg" class="w-48 h-8" /></div>
@@ -51,6 +51,7 @@ import Navigation from "../components/Navigation.astro";
         background-position: calc(50% + 120px) center;
         background-repeat: no-repeat;
         background-color: #000000;
+        background-image: url(../../public/aquamanhero.avif);
         z-index: 1;
     }
     section::before {
@@ -126,7 +127,7 @@ import Navigation from "../components/Navigation.astro";
         background-position: center top !important;
         background-size: 100%;
         height: 900px;
-        background-image: url(../../public/aquamanhero2.avif) !important;
+        background-image: url(../../public/aquamanhero2.avif);
         
       }
       section::before{
@@ -166,7 +167,14 @@ import Navigation from "../components/Navigation.astro";
         width: 90%;
       }
 
-    }  
+    } 
+    @media (max-width:500px) {
+      section {
+        background-size: 140%;
+        height: 700px;
+
+      }
+    } 
 
 
     

@@ -1,8 +1,8 @@
 <section class="flex flex-col" style="background-image: url(kids-bg.avif)">
     <div class="max-w-7xl m-auto p-4 md:py-12 md:px-12">
       <article class="flex flex-col text-white justify-center items-center">
-        <div class="flex flex-col justify-center w-5/6 items-center p-5">
-          <div class="text-5xl text-center">
+        <div class="flex flex-col justify-center md:w-5/6 items-center md:p-5">
+          <div class="text-3xl md:text-5xl text-center">
             <h2>Streaming para toda la familia</h2>
           </div>
           <div class="mt-4 pr-2 text-xl text-center">
@@ -12,12 +12,21 @@
           </div>
         </div>
       </article>
-      <article class="grid grid-cols-5 gap-4 items-end">
+      <article class="grid grid-cols-5 gap-4 items-end dibujos">
         <div><img src="gumball.avif" /></div>
         <div><img src="batman.avif" /></div>
         <div><img src="bugsbunny.avif"/></div>
         <div><img src="scoobydoo.avif" /></div>
         <div><img src="supernenas.avif"/></div>
+      </article>
+      <article class="flex justify-center items-end dibujos1">
+        <div class="w-24"><img src="gumball.avif" /></div>
+        <div class="w-24"><img src="batman.avif" /></div>
+        <div class="w-24"><img src="bugsbunny.avif"/></div>
+      </article>
+      <article class="flex justify-center items-end dibujos1">
+        <div class="w-24"><img src="scoobydoo.avif" /></div>
+        <div class="w-24"><img src="supernenas.avif"/></div>
       </article>
     </div>
   </section>
@@ -40,6 +49,18 @@
     :root {
       --max-clr-violet-rgb: 255, 0, 205;
       --max-clr-dark-violet-rgb: 100, 0, 163;
+    }
+    @media (max-width: 500px) {
+      .dibujos {
+        display: none;
+
+      }
+
+    }
+    @media (min-width: 500px) {
+      .dibujos1 {
+        display: none;
+      }
     }
   </style>
   

@@ -2,8 +2,8 @@
     <div class="max-w-7xl m-auto">
       <article class="flex text-white gap-32  justify-center barbieBox">
           <div class="flex flex-col  justify-center items-center p-5 mt-6 z-10 gap-4 ">
-              <div class="w-64"><img src="barbielogo.avif"></div>
-              <div class="text-2xl text-center"><h2>YA DISPONIBLE EN HBO MAX.<br> EXCLUSIVO PARA SUSCRIPTORES.</h2></div>
+              <div class="w-40 md:w-64"><img src="barbielogo.avif"></div>
+              <div class="md:text-2xl text-center"><h2>YA DISPONIBLE EN HBO MAX.<br> EXCLUSIVO PARA SUSCRIPTORES.</h2></div>
               <div><button class="text-white text-l border-white border-2 rounded-full w-44 h-11 hover:bg-white hover:text-black transition-all duration-500">VER TRÁILER</button></div>
           </div>
           <div class="flex flex-col  justify-center items-center p-5 mt-6 z-10 gap-4 min-w-96 barbieBox2 ">
@@ -77,6 +77,18 @@
         width: 100%;
         z-index: 0;
         top: 0px;
+        }
+      }
+      @media (max-width: 400px) {
+        section{
+          height: 500px;
+          background-color: #000000;
+          background-position: center -10vw;
+          background-size: 100%;
+        }
+        section::after{
+          background-image: linear-gradient(0deg, rgba(12, 8, 1, 0.65) 40%, rgba(12, 8, 2, 0) 50%);
+
         }
       }
   </style>
