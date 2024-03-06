@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation.astro";
 ---
 <Navigation />
 <header>
-  <section class="flex flex-col h-auto justify-left">
+  <section class="flex flex-col h-auto justify-left font-mainFont z-10 bg-[url('../../public/aquamanhero.avif')]">
   
   <div class="grid mt-20 grid-cols-2 w-full px-2 self-center justify-center items-center text-white z-10 relative  heroGrid">
     <div class="flex justify-center mt-8 gridItem1"><img src="/hbo-max-h-w-l.svg" class="w-48 h-8" /></div>
@@ -22,7 +22,7 @@ import Navigation from "../components/Navigation.astro";
     </div>
     <div></div>
     <div class="flex justify-center items-center p-2 gridItem3">
-      <button class="text-white text-l bg-btnBackground rounded-full w-72 h-11  hover:bg-white hover:text-black transition-all duration-500">SUSCRÍBETE YA</button>
+      <button class="text-white text-l font-mainFont tracking-widest bg-btnBackground rounded-full w-72 h-11  hover:bg-white hover:text-black transition-all duration-500">SUSCRÍBETE YA</button>
     </div>
     <div>
       
@@ -36,23 +36,15 @@ import Navigation from "../components/Navigation.astro";
 </header>
 
 <style>
-  	body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    }
-    button {
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 2px;
-    }
+
     section {
         height: 600px;
         background-size: auto 600px;
         background-position: calc(50% + 120px) center;
         background-repeat: no-repeat;
         background-color: #000000;
-        background-image: url(../../public/aquamanhero.avif);
-        z-index: 1;
+        
+        
     }
     section::before {
         background-image: linear-gradient(90deg, #000000 30%, #00000000 40%);

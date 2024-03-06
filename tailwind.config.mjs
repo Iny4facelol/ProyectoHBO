@@ -10,6 +10,9 @@ export default {
 				'acorddionColor' : '#9e86ff',
 				
 			},
+			fontFamily:{
+				'mainFont' : 'Poppins'
+			},
 		},
 	},
 	plugins: [
